@@ -1,2 +1,4 @@
 RewriteEngine On
-RewriteRule (.*) src/$1 [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule (.*) index.php/$1 [L]
