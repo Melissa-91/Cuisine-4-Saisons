@@ -1,0 +1,342 @@
+body{
+    margin: 0 auto;
+    
+    font-family: 'Varela Round', sans-serif;
+}
+
+#menuOpen, .navmobile{
+  display: none;
+}
+
+
+/*Bandeau du header*/
+header {
+    background-image: url("../images/accueil/pexels-lukas-616401.jpg");
+    background-size: 1530px 500px;
+  background-repeat: no-repeat;
+          
+}
+
+/*Titres du header*/
+header h1 {
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Festive', cursive;
+  font-size: 100px;
+  margin-left: 640px;
+  display:flex;
+  padding-top: 100px;
+  margin-top: -200px;
+  padding-bottom: 70px;
+  color: #393b3c;
+      
+} 
+
+header h4 {
+  font-family: 'Festive', cursive;
+  font-size: 40px;
+  display:flex;
+  margin-left: 610px;
+  margin-top: -70px;
+  padding-bottom: 90px;
+}
+
+
+header .logo{
+  margin-top: -50px;
+  margin-left: 470px;
+  width: 150px;
+height: 120px;
+}
+
+/*Formulaire header*/
+header .formulaire{
+  margin-left: 1100px;
+  padding-top: 50px;
+}
+
+header .formulaire input{
+  border-radius: 5px;
+  border:#393b3c solid;
+  opacity: 0.50;
+}
+
+.tableau button a{
+  text-decoration: none;
+  color: #393b3c;
+}
+
+.tableau button{
+  color: #393b3c;
+  transition-duration: 0.4s;
+  background-color:#47b754;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #393b3c;
+  opacity: 0.80;
+  padding: 6px;
+}
+
+.tableau button:hover{
+  background-color: #393b3c;
+  color: white;
+}
+
+.tableau button a:hover{
+  background-color: #393b3c;
+  color: white;
+}
+
+/*Bouton connecté*/
+.boutonCo a{
+  text-decoration: none;
+  padding: 5px;
+  color: #393b3c;
+  transition-duration: 0.4s;
+  background-color:#47b754;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px #393b3c;
+  opacity: 0.80;
+}
+
+.boutonCo a:hover{
+  background-color: #393b3c;
+  color: white;
+}
+
+
+
+
+
+/*Background color navigation */
+.topnav {
+    font-family: 'Pacifico', cursive;
+    background-color: #393b3c;
+    overflow: hidden;
+    margin-top: -7.4px;  
+    
+  }
+  
+  /* Liens dans la bar de navigation */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  /* Lien qui change de couleur au passage */
+  .topnav a:hover {
+    background-color: #47b754;
+    color:#393b3c;
+  }
+  
+  /* class active verte */
+  .topnav a.active {
+    background-color: #47b754;
+    color: white;
+  }
+  
+ 
+
+  .btnpanier{
+      background-color: #47b754;
+      margin-left: 440px;
+  }
+
+  .btnpanier :hover {
+      padding: 4px;
+  }
+
+  /*********************Media tablette*********************/
+
+  @media screen and (max-width: 1100px){
+
+    #menuOpen, .navmobile{
+      display: none;
+    }
+    
+
+    header {
+    background-size: 1100px 300px;
+    }
+
+    header .formulaire{
+      margin-left: 630px;
+      padding-top: 50px;
+    }
+  
+    header h1 {
+      font-size: 70px;
+      margin-left: 320px;
+      display:flex;
+      padding-top: 10px;
+      margin-top: -140px;
+      padding-bottom: 35px;
+      
+          
+  } 
+  
+  header h4 {
+      font-size: 30px;
+      display:flex;
+      margin-left: 240px;
+      margin-top: -35px;
+      padding-bottom: 70px;
+  }
+  
+  
+  header .logo{
+      margin-top: -220px;
+      margin-left: 190px;
+      width: 120px;
+    height: 120px;
+  }
+    
+  .btnpanier{
+    background-color: #47b754;
+    margin-left: 10px;
+}  
+
+  }
+
+@media screen and (max-width: 600px) {
+
+  header {
+    background-image: none;
+  }
+
+  header .formulaire{
+    margin-left: 30px;
+    display:flex;
+    margin-top: 100px;
+    padding-top: -900px;
+  }
+  
+  header h1 {
+    display: flex;
+    font-size: 50px;
+    padding-top: 50px;
+    margin-left: 150px;
+   
+}
+
+header h4 {
+  display: none;
+}
+
+header .logo{
+  display: flex;
+  margin-top: -250px;
+  margin-left: 30px;
+
+}
+
+header .topnav{
+  margin-top: 100px;
+}
+
+/*Bouton connecté*/
+.boutonCo a{
+  display: inline-flex;
+  margin-top: 80px;
+}
+
+.table-dark tr th #mobile, td #mobile{
+  display: none;
+}
+
+/*********nav Mobile*******************/
+
+#menuOpen {
+  background-color: #393b3c;
+  width: 180%;
+  height: 100%;
+  margin-bottom: 10%;
+  display : flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+ 
+}
+
+#burg1 {
+  margin-top: 5px;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: #47b754;
+  border-radius: 30px;
+}
+
+
+#burg2 {
+
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color:  #47b754;
+  border-radius: 30px;
+}
+#burg3 {
+
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color: #47b754;
+  border-radius: 30px;
+}
+
+#cross {
+  font-family: 'Festive', cursive;
+  color: #47b754;
+  font-size: 2em;
+  font-weight: bolder;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+  display: none ;
+}
+
+
+.navdesktop{
+  display: none;
+}
+
+.navmobile a{
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  flex-direction: column;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #393b3c;
+
+}
+
+.navmobile a:hover {
+  background-color: #47b754;
+  color: #393b3c;
+}
+
+.navmobile {
+  position: relative;
+  left: 5px;
+  top:-44px;
+}
+
+#menuOpen {
+  margin-top: 130px;
+}
+
+}
+
+
+
+  
+
